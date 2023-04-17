@@ -38,8 +38,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Введите x,y, и радиус");
+       
         // Инициализация объектов
-        Circle circle1 = new Circle(0, 0, 5);
+        Circle circle1 = new(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
         Circle circle2 = new Circle(8, 0, 3);
 
         // Проверка пересечения окружностей
